@@ -1,0 +1,46 @@
+/* index.css - Light Mode Only (Sky, Green & Yellow) */
+:root {
+  --sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --mono: 'SF Mono', 'JetBrains Mono', monospace;
+  
+  /* Light Theme - Fresh Sky Colors */
+  --bg: linear-gradient(135deg, #e0f2fe 0%, #fef08a 100%);
+  --card: rgba(255, 255, 255, 0.92);
+  --text: #1e293b;
+  --text-secondary: #475569;
+  --accent: #0ea5e9;
+  --accent-2: #22c55e;
+  --accent-3: #eab308;
+  --border: rgba(14, 165, 233, 0.3);
+  --shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(14, 165, 233, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 10px;
+}
+
+::selection {
+  background: var(--accent-3);
+  color: #1e293b;
+}
